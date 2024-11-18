@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import logoImage from "@/assets/images/logo.svg";
+import Button from "@/components/Button";
 
 const navLinks = [
   { label: "Home", href: "#" },
@@ -24,15 +26,17 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="feather feather-menu"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-menu md:hidden"
             >
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
+            <Button variant="secondary">Log In</Button>
+            <Button variant="primary">Sign Up</Button>
           </div>
         </div>
       </div>
