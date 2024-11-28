@@ -89,12 +89,18 @@ export default function Features() {
           <FeatureCard
             title="Keyborad Quick Actions"
             description="Powerful command to help you create your designs more quickly"
-            className="md:col-span-2 lg:col-span-1 md:col-start-2 lg:col-start-auto"
+            className="md:col-span-2 lg:col-span-1 md:col-start-2 lg:col-start-auto group"
           >
             <div className="aspect-video flex items-center justify-center gap-4">
-              <Key className="w-28">shift</Key>
-              <Key>alt</Key>
-              <Key>C</Key>
+              <Key className="w-28 outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500 group-hover:translate-y-1">
+                shift
+              </Key>
+              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-500 transition-all duration-500 group-hover:translate-y-1 delay-150">
+                alt
+              </Key>
+              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-500 transition-all duration-500 group-hover:translate-y-1 delay-300">
+                C
+              </Key>
             </div>
           </FeatureCard>
         </div>
